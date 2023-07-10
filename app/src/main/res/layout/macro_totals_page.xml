@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="16dp"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/calorieLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="64dp"
+    android:text="@string/calorieLabel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ProgressBar
+    android:id="@+id/calorieMeter"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="300dp"
+    android:layout_height="20dp"
+    android:indeterminate="false"
+    android:max="100"
+    android:progress="0"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/calorieLabel" />
+
+<ProgressBar
+    android:id="@+id/fatMeter"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="100dp"
+    android:layout_height="20dp"
+    android:max="100"
+    android:progress="0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/calorieMeter"
+    tools:layout_editor_absoluteY="19dp" />
+
+<ProgressBar
+    android:id="@+id/carbMeter"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="100dp"
+    android:layout_height="20dp"
+    android:max="100"
+    android:progress="0"
+    app:layout_constraintEnd_toStartOf="@+id/proteinMeter"
+    app:layout_constraintStart_toEndOf="@+id/fatMeter"
+    app:layout_constraintTop_toBottomOf="@+id/calorieMeter" />
+
+<ProgressBar
+    android:id="@+id/proteinMeter"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="100dp"
+    android:layout_height="20dp"
+    android:max="100"
+    android:progress="0"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/calorieMeter" />
+
+<TextView
+    android:id="@+id/fatLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="@string/fatLabel"
+    app:layout_constraintEnd_toEndOf="@+id/fatMeter"
+    app:layout_constraintStart_toStartOf="@+id/fatMeter"
+    app:layout_constraintTop_toBottomOf="@+id/fatMeter" />
+
+<TextView
+    android:id="@+id/carbLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="@string/carbLabel"
+    app:layout_constraintEnd_toEndOf="@+id/carbMeter"
+    app:layout_constraintStart_toStartOf="@+id/carbMeter"
+    app:layout_constraintTop_toBottomOf="@+id/carbMeter" />
+
+<TextView
+    android:id="@+id/proteinLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="@string/proteinLabel"
+    app:layout_constraintEnd_toEndOf="@+id/proteinMeter"
+    app:layout_constraintStart_toStartOf="@+id/proteinMeter"
+    app:layout_constraintTop_toBottomOf="@+id/proteinMeter" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/buttonAddMacros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carbLabel" />
+
+<Button
+    android:id="@+id/buttonResetTotals"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/buttonReset"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+<Button
+    android:id="@+id/buttonSetGoal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/buttonSetGoals"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonResetTotals" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

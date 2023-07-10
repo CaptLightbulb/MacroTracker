@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MacroTracker+</string>
+    <string name="calorieLabel">Total Calories\n(%1$d/ %2$d)</string>
+    <string name ="fatLabel">Fats\n(%1$dg/%2$dg)</string>
+    <string name ="carbLabel">Carbs\n(%1$dg/%2$dg)</string>
+    <string name ="proteinLabel">Protein\n(%1$dg/%2$dg)</string>
+    <string name="buttonAddMacros">Add Macros</string>
+    <string name="buttonReset">Reset Daily Totals</string>
+    <string name="buttonSetGoals">Set Goals</string>
+    <string name="buttonAdd">Add</string>
+    <string name="namePrompt">Name</string>
+    <string name="caloriePrompt">Calories</string>
+    <string name="fatPrompt">Fats (grams)</string>
+    <string name="carbPrompt">Carbs (grams)</string>
+    <string name="proteinPrompt">Protein (grams)</string>
+    <string name="mealCalLabel">Calories: %1$d</string>
+    <string name="mealFatLabel">Fats: %1$d g</string>
+    <string name="mealCarbLabel">Carbs: %1$d g</string>
+    <string name="mealProteinLabel">Protein: %1$d g</string>
+    <string name="buttonMealAdd">Add to Daily Totals</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonCreateMeal">Create Meal Preset</string>
+    <string name="emptyListMsg">There are no meal presets, consider creating one</string>
+    <string-array name="weekdays">
+        <item>All Days</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>
